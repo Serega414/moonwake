@@ -41,6 +41,29 @@
     margin-bottom: 40px;
     padding: 0 10px;
   }
+
+  .explainer__storytelling-content .cartoon__items-inner {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .explainer__storytelling-content .cartoon__items-inner .storytelling__text-block h1::after {
+    left: 37px;
+    top: -59px;
+    animation: arrowLeftCartoonUp 4s infinite;
+  }
+
+  @keyframes arrowLeftCartoonUp {
+    0% {
+      transform: translateX(20px) rotate(100deg);
+    }
+    50% {
+      transform: translateX(0) rotate(120deg);
+    }
+    100% {
+      transform: translateX(20px) rotate(100deg);
+    }
+  }
 }
 @media (max-width: 1193px) {
   .storytelling-contentvideo__inner .storytelling__text-block {
@@ -63,6 +86,10 @@
 @media (max-width: 1088px) {
   .portfolio-content .portfolio-inner ul {
     justify-content: center;
+  }
+
+  .explainer__storytelling-item.cartoon-item {
+    max-width: 550px;
   }
 }
 @media (max-width: 1070px) {
@@ -143,6 +170,15 @@
   .moonwake__item-links .moonwake__item-link.color-box {
     margin: 0 0 0 0;
   }
+
+  .explainer__storytelling-item.cartoon-item {
+    max-width: 550px;
+  }
+
+  .commercial__inner.cartoon__inner .cartoon-item .explainer__storytelling-img {
+    max-width: 550px;
+    margin-top: 15px;
+  }
 }
 @media (max-width: 960px) {
   .moonwake-family__inner {
@@ -160,6 +196,16 @@
     width: 60%;
     margin-left: 0;
     margin-bottom: 20px;
+  }
+
+  .commercial__inner.cartoon__inner .explainer__storytelling-box .explainer__storytelling-text {
+    font-size: 22px;
+    padding: 42px;
+  }
+}
+@media (max-width: 940px) {
+  .storytelling-conten__item.cartoon-content__item h2::before {
+    display: none;
   }
 }
 @media (max-width: 920px) {
@@ -239,6 +285,16 @@
     width: 135px;
     height: 181px;
   }
+
+  .commercial .explainer__storytelling-title.cartoon-adaptive {
+    padding-top: 0;
+    font-size: 63px;
+    line-height: 47px;
+    margin-bottom: -95px;
+  }
+  .commercial .explainer__storytelling-title.cartoon-adaptive span {
+    font-size: 49px;
+  }
 }
 @media (max-width: 860px) {
   .testimonials .testimonials-title img {
@@ -260,6 +316,20 @@
     width: 128px;
     height: 181px;
   }
+
+  .commercial .explainer__storytelling-title.cartoon-adaptive {
+    font-size: 50px;
+    line-height: 41px;
+  }
+
+  .commercial .explainer__storytelling-title.cartoon-adaptive span {
+    font-size: 39px;
+  }
+
+  .commercial__inner.cartoon__inner .explainer__storytelling-box .explainer__storytelling-text {
+    font-size: 21px;
+    padding: 40px 31px;
+  }
 }
 @media (max-width: 830px) {
   .contentvideo__item-position .storytelling-contentvideo__item {
@@ -268,6 +338,15 @@
 
   .contentvideo__item-position .storytelling-contentvideo__item .global_wrapper__item {
     padding: 0 0 53.25% 0;
+  }
+
+  .commercial__inner.cartoon__inner .explainer__storytelling-box::after {
+    display: none;
+  }
+
+  .cartoon .explainer__storytelling-title.cartoon-adaptive {
+    margin-right: -173px;
+    margin-bottom: -50px;
   }
 }
 @media (max-width: 813px) {
@@ -705,6 +784,25 @@
     padding-top: 26px;
     left: -73px;
   }
+
+  .explainer__wrapper.commercial-services__wrapper .commercial-watisit-title {
+    width: 300px;
+  }
+
+  .explainer__wrapper.commercial-services__wrapper .explainer__watisit-text {
+    font-size: 59px;
+    line-height: 45px;
+    font-weight: 400;
+    margin-right: -54px;
+  }
+
+  .explainer__wrapper.commercial-services__wrapper .commercial-watisit-title::after {
+    right: -163px;
+  }
+
+  .cartoon .explainer__storytelling-title.cartoon-adaptive {
+    margin-bottom: 40px;
+  }
 }
 @media (max-width: 620px) {
   .our__family.bgi-box {
@@ -834,6 +932,11 @@
     left: -13px;
   }
 }
+@media (max-width: 540px) {
+  .explainer__wrapper.commercial-services__wrapper .commercial-watisit-title::after {
+    display: none;
+  }
+}
 @media (max-width: 500px) {
   .moonwake__item .moonwake__item-title {
     font-size: 30px;
@@ -932,6 +1035,21 @@
       transform: translateY(10px) scale(0.3);
     }
   }
+  .storytelling-conten__item.commercial-conten__item .commercial-contenh2 h2 {
+    font-size: 64px;
+    font-weight: 600;
+    margin-bottom: 36px;
+  }
+
+  .explainer__storytelling-content.commercail__storytelling-content .storytelling-conten__item.commercial-conten__item .commercial-contenh2::after {
+    top: -101px;
+    right: 0;
+    transform: scale(0.3) rotate(7deg);
+  }
+
+  .cartoon .explainer__storytelling-title.cartoon-adaptive {
+    margin-right: -100px;
+  }
 }
 @media (max-width: 480px) {
   .storytelling-contentvideo__inner .storytelling__text-block.storytelling__texth1 {
@@ -980,6 +1098,14 @@
     font-size: 23px;
     line-height: 26px;
   }
+
+  .storytelling-conten__item.cartoon-content__item h2 {
+    font-size: 76px;
+  }
+
+  .storytelling-conten__item.cartoon-content__item h3 {
+    font-size: 50px;
+  }
 }
 @media (max-width: 440px) {
   .explainer__item .explindex__item-title {
@@ -1018,6 +1144,35 @@
   .storytelling-contentvideo__inner .storytelling-conten__item h3 {
     font-size: 44px;
     margin-bottom: 20px;
+  }
+
+  .storytelling-conten__item.commercial-conten__item .commercial-contenh2 h2 {
+    font-size: 52px;
+    font-weight: 600;
+    margin-bottom: 28px;
+  }
+
+  .explainer__wrapper.commercial-services__wrapper .commercial-watisit-title {
+    width: 250px;
+  }
+
+  .explainer__wrapper.commercial-services__wrapper .explainer__watisit-text {
+    font-size: 44px;
+    line-height: 29px;
+    margin-right: -16px;
+  }
+
+  .cartoon .explainer__storytelling-title.cartoon-adaptive {
+    margin-right: 0px;
+  }
+
+  .commercial__inner.cartoon__inner .explainer__storytelling-box .explainer__storytelling-text {
+    font-size: 18px;
+    padding: 19px 24px;
+  }
+
+  .cartoon__items-inner .storytelling__text-block {
+    display: none;
   }
 }
 @media (max-width: 400px) {
@@ -1067,6 +1222,18 @@
   .commercial .explainer__storytelling-title.commercial-adaptive span {
     font-size: 44px;
   }
+
+  .storytelling-conten__item.commercial-conten__item .commercial-contenh2 h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 28px;
+  }
+
+  .explainer__storytelling-content.commercail__storytelling-content .storytelling-conten__item.commercial-conten__item .commercial-contenh2::after {
+    top: -101px;
+    right: 0;
+    transform: scale(0.2) rotate(7deg);
+  }
 }
 @media (max-width: 380px) {
   .moonwake__inner .moonwake__item-links {
@@ -1113,6 +1280,24 @@
 
   .explainer__processs .explainer__processs-title span {
     font-size: 48px;
+  }
+
+  .commercial .explainer__storytelling-title.cartoon-adaptive {
+    font-size: 40px;
+    line-height: 33px;
+  }
+  .commercial .explainer__storytelling-title.cartoon-adaptive span {
+    font-size: 32px;
+  }
+
+  .questions__form-wrapper .questions__form-title {
+    font-size: 31px;
+    margin-bottom: 12px;
+  }
+
+  .questions__form-wrapper .questions__form-text {
+    font-size: 16px;
+    padding: 0 5px;
   }
 }
 @media (max-width: 350px) {
@@ -2956,7 +3141,7 @@ h1.contact-title::after {
 .storytelling-conten__item h2 {
   font-size: 92px;
   font-weight: 700;
-  line-height: 80px;
+  line-height: 85px;
   background-image: url(../images/storytelling-conten__item___h2.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -3414,4 +3599,119 @@ h1.contact-title::after {
 }
 .commercial-services__wrapper .explainer__watisit-inner {
   padding: 24px 0 50px;
+}
+
+.commercial__inner.cartoon__inner {
+  flex-direction: row;
+}
+
+.commercial__inner.cartoon__inner .explainer__storytelling-img {
+  max-width: 600px;
+}
+
+.explainer__storytelling-title.cartoon-adaptive {
+  padding-top: 0;
+  font-size: 70px;
+  font-weight: 500;
+  margin-right: -321px;
+  margin-bottom: -181px;
+}
+.explainer__storytelling-title.cartoon-adaptive span {
+  font-size: 55px;
+  font-weight: 400;
+}
+
+.commercial__inner.cartoon__inner .explainer__storytelling-box::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/storytelling__triangle.png);
+  top: -67px;
+  left: -138px;
+  right: auto;
+  z-index: -1;
+  width: 200px;
+  height: 220px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(0deg) scale(0.5);
+}
+
+.commercial__inner.cartoon__inner .explainer__storytelling-text {
+  font-size: 25px;
+  padding: 45px;
+}
+
+.cartoon__items-inner {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+.cartoon__items-inner .storytelling__text-block {
+  margin-top: 66px;
+  height: 100px;
+  width: 399px;
+  transform: rotate(7deg);
+  text-align: right;
+  padding-left: 30px;
+}
+.cartoon__items-inner .storytelling__text-block h1::after {
+  left: 37px;
+  top: -43px;
+  animation: arrowLeftCartoon 4s infinite;
+}
+
+@keyframes arrowLeftCartoon {
+  0% {
+    transform: translateX(20px) rotate(90deg);
+  }
+  50% {
+    transform: translateX(0) rotate(70deg);
+  }
+  100% {
+    transform: translateX(20px) rotate(90deg);
+  }
+}
+.cartoon-item__img img {
+  max-width: 770px;
+  width: 100%;
+  background-size: cover;
+}
+
+.storytelling-conten__item.cartoon-content__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.storytelling-conten__item.cartoon-content__item h2 {
+  position: relative;
+  width: 500px;
+}
+.storytelling-conten__item.cartoon-content__item h2::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/cartoon-rabbit__img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  top: -162px;
+  left: -347px;
+}
+
+.storytelling-conten__item-descr.cartoon-content__item-descr {
+  max-width: 845px;
+}
+
+.explainer__wrapper.cartoon__wrapper .explainer__watisit-text {
+  margin-right: -137px;
+}
+.explainer__wrapper.cartoon__wrapper .explainer__watisit-title::before {
+  top: -111px;
+}
+
+.explainer__watisit-inner.cartoon__watisit-inner {
+  flex-wrap: inherit;
+  align-items: baseline;
 }

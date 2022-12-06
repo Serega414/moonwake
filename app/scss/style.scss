@@ -1360,7 +1360,7 @@ h1.contact-title {
   h2 {
     font-size: 92px;
     font-weight: 700;
-    line-height: 80px;
+    line-height: 85px;
     background-image: url(../images/storytelling-conten__item___h2.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -1794,3 +1794,113 @@ h1.contact-title {
   }
 }
 // end commercial
+
+// start cartoon
+.commercial__inner.cartoon__inner {
+  flex-direction: row;
+}
+.commercial__inner.cartoon__inner .explainer__storytelling-img {
+  max-width: 600px;
+}
+.explainer__storytelling-title.cartoon-adaptive {
+  padding-top: 0;
+  font-size: 70px;
+  font-weight: 500;
+  margin-right: -321px;
+  margin-bottom: -181px;
+  span {
+    font-size: 55px;
+    font-weight: 400;
+  }
+}
+.commercial__inner.cartoon__inner .explainer__storytelling-box::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/storytelling__triangle.png);
+  top: -67px;
+  left: -138px;
+  right: auto;
+  z-index: -1;
+  width: 200px;
+  height: 220px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(0deg) scale(0.5);
+}
+.commercial__inner.cartoon__inner .explainer__storytelling-text {
+  font-size: 25px;
+  padding: 45px;
+}
+.cartoon__items-inner {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  .storytelling__text-block {
+    margin-top: 66px;
+    height: 100px;
+    width: 399px;
+    transform: rotate(7deg);
+    text-align: right;
+    padding-left: 30px;
+  }
+  .storytelling__text-block h1::after {
+    left: 37px;
+    top: -43px;
+    animation: arrowLeftCartoon 4s infinite;
+  }
+}
+@keyframes arrowLeftCartoon {
+  0% {
+    transform: translateX(20px) rotate(90deg);
+  }
+  50% {
+    transform: translateX(0) rotate(70deg);
+  }
+  100% {
+    transform: translateX(20px) rotate(90deg);
+  }
+}
+.cartoon-item__img {
+  img {
+    max-width: 770px;
+    width: 100%;
+    background-size: cover;
+  }
+}
+.storytelling-conten__item.cartoon-content__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.storytelling-conten__item.cartoon-content__item h2 {
+  position: relative;
+  width: 500px;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/cartoon-rabbit__img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    top: -162px;
+    left: -347px;
+  }
+}
+.storytelling-conten__item-descr.cartoon-content__item-descr {
+  max-width: 845px;
+}
+.explainer__wrapper.cartoon__wrapper {
+  & .explainer__watisit-text {
+    margin-right: -137px;
+  }
+  & .explainer__watisit-title::before {
+    top: -111px;
+  }
+}
+.explainer__watisit-inner.cartoon__watisit-inner {
+  flex-wrap: inherit;
+  align-items: baseline;
+}
+// end cartoon

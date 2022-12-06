@@ -34,6 +34,32 @@
     margin-bottom: 40px;
     padding: 0 10px;
   }
+  .explainer__storytelling-content .cartoon__items-inner {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .explainer__storytelling-content
+    .cartoon__items-inner
+    .storytelling__text-block
+    h1::after {
+    left: 37px;
+    top: -59px;
+    animation: arrowLeftCartoonUp 4s infinite;
+  }
+  @keyframes arrowLeftCartoonUp {
+    0% {
+      transform: translateX(20px) rotate(100deg);
+    }
+    50% {
+      transform: translateX(0) rotate(120deg);
+    }
+    100% {
+      transform: translateX(20px) rotate(100deg);
+    }
+  }
+  .cartoon__wrapper .explainer__watisit-inner.cartoon__watisit-inner {
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 1193px) {
   .storytelling-contentvideo__inner .storytelling__text-block {
@@ -55,6 +81,9 @@
 @media (max-width: 1088px) {
   .portfolio-content .portfolio-inner ul {
     justify-content: center;
+  }
+  .explainer__storytelling-item.cartoon-item {
+    max-width: 550px;
   }
 }
 @media (max-width: 1070px) {
@@ -131,6 +160,13 @@
   .moonwake__item-links .moonwake__item-link.color-box {
     margin: 0 0 0 0;
   }
+  .explainer__storytelling-item.cartoon-item {
+    max-width: 550px;
+  }
+  .commercial__inner.cartoon__inner .cartoon-item .explainer__storytelling-img {
+    max-width: 550px;
+    margin-top: 15px;
+  }
 }
 @media (max-width: 960px) {
   .moonwake-family__inner {
@@ -146,6 +182,17 @@
       margin-left: 0;
       margin-bottom: 20px;
     }
+  }
+  .commercial__inner.cartoon__inner
+    .explainer__storytelling-box
+    .explainer__storytelling-text {
+    font-size: 22px;
+    padding: 42px;
+  }
+}
+@media (max-width: 940px) {
+  .storytelling-conten__item.cartoon-content__item h2::before {
+    display: none;
   }
 }
 @media (max-width: 920px) {
@@ -212,6 +259,15 @@
     width: 135px;
     height: 181px;
   }
+  .commercial .explainer__storytelling-title.cartoon-adaptive {
+    padding-top: 0;
+    font-size: 63px;
+    line-height: 47px;
+    margin-bottom: -95px;
+    span {
+      font-size: 49px;
+    }
+  }
 }
 @media (max-width: 860px) {
   .testimonials .testimonials-title img {
@@ -233,6 +289,19 @@
     width: 128px;
     height: 181px;
   }
+  .commercial .explainer__storytelling-title.cartoon-adaptive {
+    font-size: 50px;
+    line-height: 41px;
+  }
+  .commercial .explainer__storytelling-title.cartoon-adaptive span {
+    font-size: 39px;
+  }
+  .commercial__inner.cartoon__inner
+    .explainer__storytelling-box
+    .explainer__storytelling-text {
+    font-size: 21px;
+    padding: 40px 31px;
+  }
 }
 @media (max-width: 830px) {
   .contentvideo__item-position .storytelling-contentvideo__item {
@@ -242,6 +311,13 @@
     .storytelling-contentvideo__item
     .global_wrapper__item {
     padding: 0 0 53.25% 0;
+  }
+  .commercial__inner.cartoon__inner .explainer__storytelling-box::after {
+    display: none;
+  }
+  .cartoon .explainer__storytelling-title.cartoon-adaptive {
+    margin-right: -173px;
+    margin-bottom: -50px;
   }
 }
 @media (max-width: 813px) {
@@ -629,6 +705,13 @@
     .commercial-watisit-title::after {
     right: -163px;
   }
+  .cartoon .explainer__storytelling-title.cartoon-adaptive {
+    margin-bottom: 40px;
+  }
+  .explainer__wrapper.cartoon__wrapper.cartoon-adaptive__wrapper
+    .explainer__watisit-text {
+    margin-right: -87px;
+  }
 }
 @media (max-width: 620px) {
   .our__family.bgi-box {
@@ -835,6 +918,13 @@
     right: 0;
     transform: scale(0.3) rotate(7deg);
   }
+  .cartoon .explainer__storytelling-title.cartoon-adaptive {
+    margin-right: -100px;
+  }
+  .explainer__wrapper.cartoon__wrapper.cartoon-adaptive__wrapper
+    .explainer__watisit-text {
+    margin-right: -53px;
+  }
 }
 @media (max-width: 480px) {
   .storytelling-contentvideo__inner
@@ -875,6 +965,12 @@
   .global_wrapper .global_wrapper__decr span {
     font-size: 23px;
     line-height: 26px;
+  }
+  .storytelling-conten__item.cartoon-content__item h2 {
+    font-size: 76px;
+  }
+  .storytelling-conten__item.cartoon-content__item h3 {
+    font-size: 50px;
   }
 }
 @media (max-width: 440px) {
@@ -920,6 +1016,18 @@
     font-size: 44px;
     line-height: 29px;
     margin-right: -16px;
+  }
+  .cartoon .explainer__storytelling-title.cartoon-adaptive {
+    margin-right: 0px;
+  }
+  .commercial__inner.cartoon__inner
+    .explainer__storytelling-box
+    .explainer__storytelling-text {
+    font-size: 18px;
+    padding: 19px 24px;
+  }
+  .cartoon__items-inner .storytelling__text-block {
+    display: none;
   }
 }
 
@@ -1015,6 +1123,21 @@
   }
   .explainer__processs .explainer__processs-title span {
     font-size: 48px;
+  }
+  .commercial .explainer__storytelling-title.cartoon-adaptive {
+    font-size: 40px;
+    line-height: 33px;
+    span {
+      font-size: 32px;
+    }
+  }
+  .questions__form-wrapper .questions__form-title {
+    font-size: 31px;
+    margin-bottom: 12px;
+  }
+  .questions__form-wrapper .questions__form-text {
+    font-size: 16px;
+    padding: 0 5px;
   }
 }
 @media (max-width: 350px) {
