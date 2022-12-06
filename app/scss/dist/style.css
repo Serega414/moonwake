@@ -50,6 +50,10 @@
   .storytelling-contentvideo__inner .storytelling__text-block2 {
     display: inline-block;
   }
+
+  .storytelling-contentvideo__inner .storytelling__text-block.storytelling__texth1 {
+    display: block;
+  }
 }
 @media (max-width: 1099px) {
   .map-contact .map-contact__item {
@@ -210,10 +214,51 @@
     background-image: url(../images/storytelling__text__arrow.png);
     animation-name: fadeInDown;
   }
+
+  .commercial .explainer__storytelling-title.commercial-adaptive {
+    padding-top: 0;
+    font-size: 74px;
+    line-height: 53px;
+    margin-bottom: -90px;
+  }
+  .commercial .explainer__storytelling-title.commercial-adaptive span {
+    font-size: 52px;
+  }
+
+  .commercial__inner h2.explainer__storytelling-text {
+    font-size: 21px;
+  }
+
+  .explainer__storytelling-inner.commercial__inner .explainer__storytelling-box::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/storytelling__triangle.png);
+    top: 108px;
+    left: auto;
+    right: -77px;
+    width: 135px;
+    height: 181px;
+  }
 }
 @media (max-width: 860px) {
   .testimonials .testimonials-title img {
     max-width: 450px;
+  }
+}
+@media (max-width: 845px) {
+  .commercial__inner h2.explainer__storytelling-text {
+    font-size: 17px;
+  }
+
+  .explainer__storytelling-inner.commercial__inner .explainer__storytelling-box::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/storytelling__triangle.png);
+    top: 44px;
+    left: auto;
+    right: -70px;
+    width: 128px;
+    height: 181px;
   }
 }
 @media (max-width: 830px) {
@@ -287,6 +332,10 @@
 
   .storytelling-contentvideo__inner .storytelling__text-block2 {
     display: none;
+  }
+
+  .commercial .explainer__storytelling-title.commercial-adaptive {
+    margin-bottom: -30px;
   }
 }
 @media (max-width: 765px) {
@@ -565,6 +614,14 @@
     max-width: 400px;
     width: 100%;
   }
+
+  .explainer__storytelling-inner.commercial__inner .explainer__storytelling-box::after {
+    display: none;
+  }
+
+  .storytelling-contentvideo__inner .storytelling__text-block.storytelling__texth1 {
+    left: -73px;
+  }
 }
 @media (max-width: 700px) {
   .explainer__item .explindex__item-title {
@@ -638,6 +695,15 @@
   }
   .portfolio-content .portfolio-title::after {
     display: none;
+  }
+
+  .commercial .explainer__storytelling-title.commercial-adaptive {
+    margin-bottom: 20px;
+  }
+
+  .storytelling-contentvideo__inner .storytelling__text-block.storytelling__texth1 {
+    padding-top: 26px;
+    left: -73px;
   }
 }
 @media (max-width: 620px) {
@@ -762,6 +828,11 @@
     margin-right: -71px;
     font-size: 41px;
   }
+
+  .storytelling-contentvideo__inner .storytelling__text-block.storytelling__texth1 {
+    padding-top: 20px;
+    left: -13px;
+  }
 }
 @media (max-width: 500px) {
   .moonwake__item .moonwake__item-title {
@@ -860,6 +931,11 @@
     100% {
       transform: translateY(10px) scale(0.3);
     }
+  }
+}
+@media (max-width: 480px) {
+  .storytelling-contentvideo__inner .storytelling__text-block.storytelling__texth1 {
+    display: none;
   }
 }
 @media (max-width: 470px) {
@@ -982,6 +1058,14 @@
     100% {
       transform: translateY(20px) scale(0.3);
     }
+  }
+  .commercial .explainer__storytelling-title.commercial-adaptive {
+    margin-right: 0;
+    font-size: 63px;
+    line-height: 48px;
+  }
+  .commercial .explainer__storytelling-title.commercial-adaptive span {
+    font-size: 44px;
   }
 }
 @media (max-width: 380px) {
@@ -3223,22 +3307,9 @@ h1.contact-title::after {
   height: 252px;
   top: -106px;
   right: -23px;
-  animation: fillColor 5s infinite;
   transform: scale(0.5) rotate(7deg);
-  fill: #f00000;
 }
 
-@keyframes fillColor {
-  0% {
-    fill: #f00000;
-  }
-  70% {
-    fill: #000;
-  }
-  100% {
-    fill: #03e045;
-  }
-}
 .commercial-contentvideo__inner {
   display: flex;
   flex-direction: column;
@@ -3286,10 +3357,10 @@ h1.contact-title::after {
   background-image: url(../images/commercail-conten__item-descr__yellow_line.png);
 }
 .storytelling-conten__item.commercial-conten__item .storytelling-conten__item-descr::before {
-  left: -153px;
+  left: -140px;
 }
 .storytelling-conten__item.commercial-conten__item .storytelling-conten__item-descr::after {
-  right: -153px;
+  right: -140px;
 }
 .storytelling-conten__item.commercial-conten__item h2 {
   font-size: 75px;

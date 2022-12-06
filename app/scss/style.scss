@@ -1684,21 +1684,8 @@ h1.contact-title {
       height: 252px;
       top: -106px;
       right: -23px;
-      animation: fillColor 5s infinite;
       transform: scale(0.5) rotate(7deg);
-      fill: rgb(240, 0, 0);
     }
-  }
-}
-@keyframes fillColor {
-  0% {
-    fill: rgb(240, 0, 0);
-  }
-  70% {
-    fill: #000;
-  }
-  100% {
-    fill: rgb(3, 224, 69);
   }
 }
 .commercial-contentvideo__inner {
@@ -1746,10 +1733,10 @@ h1.contact-title {
     background-image: url(../images/commercail-conten__item-descr__yellow_line.png);
   }
   .storytelling-conten__item-descr::before {
-    left: -153px;
+    left: -140px;
   }
   .storytelling-conten__item-descr::after {
-    right: -153px;
+    right: -140px;
   }
   h2 {
     font-size: 75px;

@@ -704,6 +704,21 @@
     padding-top: 26px;
     left: -73px;
   }
+
+  .explainer__wrapper.commercial-services__wrapper .commercial-watisit-title {
+    width: 300px;
+  }
+
+  .explainer__wrapper.commercial-services__wrapper .explainer__watisit-text {
+    font-size: 59px;
+    line-height: 45px;
+    font-weight: 400;
+    margin-right: -54px;
+  }
+
+  .explainer__wrapper.commercial-services__wrapper .commercial-watisit-title::after {
+    right: -163px;
+  }
 }
 @media (max-width: 620px) {
   .our__family.bgi-box {
@@ -833,6 +848,11 @@
     left: -13px;
   }
 }
+@media (max-width: 540px) {
+  .explainer__wrapper.commercial-services__wrapper .commercial-watisit-title::after {
+    display: none;
+  }
+}
 @media (max-width: 500px) {
   .moonwake__item .moonwake__item-title {
     font-size: 30px;
@@ -931,6 +951,17 @@
       transform: translateY(10px) scale(0.3);
     }
   }
+  .storytelling-conten__item.commercial-conten__item .commercial-contenh2 h2 {
+    font-size: 64px;
+    font-weight: 600;
+    margin-bottom: 36px;
+  }
+
+  .explainer__storytelling-content.commercail__storytelling-content .storytelling-conten__item.commercial-conten__item .commercial-contenh2::after {
+    top: -101px;
+    right: 0;
+    transform: scale(0.3) rotate(7deg);
+  }
 }
 @media (max-width: 480px) {
   .storytelling-contentvideo__inner .storytelling__text-block.storytelling__texth1 {
@@ -1018,6 +1049,22 @@
     font-size: 44px;
     margin-bottom: 20px;
   }
+
+  .storytelling-conten__item.commercial-conten__item .commercial-contenh2 h2 {
+    font-size: 52px;
+    font-weight: 600;
+    margin-bottom: 28px;
+  }
+
+  .explainer__wrapper.commercial-services__wrapper .commercial-watisit-title {
+    width: 250px;
+  }
+
+  .explainer__wrapper.commercial-services__wrapper .explainer__watisit-text {
+    font-size: 44px;
+    line-height: 29px;
+    margin-right: -16px;
+  }
 }
 @media (max-width: 400px) {
   .contact-author__inner .contact-author__inner-title {
@@ -1065,6 +1112,18 @@
   }
   .commercial .explainer__storytelling-title.commercial-adaptive span {
     font-size: 44px;
+  }
+
+  .storytelling-conten__item.commercial-conten__item .commercial-contenh2 h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 28px;
+  }
+
+  .explainer__storytelling-content.commercail__storytelling-content .storytelling-conten__item.commercial-conten__item .commercial-contenh2::after {
+    top: -101px;
+    right: 0;
+    transform: scale(0.2) rotate(7deg);
   }
 }
 @media (max-width: 380px) {
