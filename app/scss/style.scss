@@ -2201,3 +2201,93 @@ h1.contact-title {
   background-color: #232323;
 }
 // end sandora-fruits
+
+// start Illustration
+
+.illustrations {
+  padding: 80px 10px 10px;
+  text-align: center;
+  overflow: hidden;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+
+.illustrations-title {
+  color: #000000;
+  font-size: 74px;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 700;
+}
+.illustrations-wrapper__position {
+  position: relative;
+  padding-bottom: 108px;
+}
+.illustrations-wrapper::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: -110px;
+  left: calc((100vw - 544px) / 2);
+  background-color: #ffd900;
+  height: 100%;
+  min-width: 100px;
+  width: 100%;
+}
+.illustrations-content_img img {
+  max-width: 715px;
+  width: 100%;
+}
+.storyboards-text.illustrations-text {
+  width: 270px;
+  text-align: right;
+}
+.illustrations-text.storyboards-text::after {
+  left: 211px;
+}
+.illustrations-content_text {
+  max-width: 310px;
+}
+.illustrations_content--row.storyboards_content--row {
+  justify-content: inherit;
+}
+
+.illustrations-item__text {
+  padding-left: 20px;
+  max-width: 250px;
+  font-size: 17px;
+  line-height: 26px;
+  font-weight: 400;
+  span {
+    font-weight: 700;
+  }
+}
+.illustrations-content__order {
+  order: 1;
+}
+.illustrations-descr {
+  margin-top: -70px;
+  background-image: url(../images/storytelling-conten__item___h2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  text-align: center;
+  padding: 10px;
+  height: 265px;
+}
+.illustrations-descr-text {
+  display: inline-block;
+  text-align: justify;
+  padding: 50px 10px;
+  max-width: 830px;
+  color: #000000;
+  font-size: 20px;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+  span {
+    font-weight: 700;
+  }
+}
+// end Illustration

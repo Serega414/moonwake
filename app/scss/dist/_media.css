@@ -2,6 +2,10 @@
   body.lock {
     overflow: hidden;
   }
+
+  .illustrations-descr__adaptive.illustrations-descr {
+    background-size: cover;
+  }
 }
 @media (max-width: 1110px) {
   .story .story-box .story-box__title h1 {
@@ -431,6 +435,10 @@
     font-size: 23px;
     line-height: 30px;
   }
+
+  .illustrations-descr__adaptive.illustrations-descr {
+    height: 324px;
+  }
 }
 @media (max-width: 765px) {
   .portfolio-content .portfolio-inner ul li {
@@ -671,6 +679,10 @@
   .storyboards.storyboards-adaptive {
     padding: 18px 10px 36px;
   }
+
+  .illustrations.illustrations-adaptive {
+    padding: 5px 10px 10px;
+  }
 }
 @media (max-width: 730px) {
   .our__family.bgi-box {
@@ -734,6 +746,11 @@
     right: 0;
   }
 
+  .illustrations-wrapper__position.illustrations-wrapper::before {
+    left: 0;
+    right: 0;
+  }
+
   .storyboards-content-item .storyboards_content--row {
     flex-direction: column;
     padding: 0;
@@ -775,6 +792,31 @@
 
   .storyboards-content_text--adaptive {
     order: 1;
+  }
+
+  .storyboards-content-item .illustrations_content--row .illustrations-content__order {
+    order: 0;
+  }
+
+  .storyboards-content-item .illustrations-content_img.storyboards-content_img-order {
+    order: 0;
+  }
+
+  .storyboards-content-item .illustrations-item__text {
+    max-width: 100%;
+    padding: 20px 10px;
+  }
+
+  .illustrations_content--row .monwake_svg {
+    padding-right: 0;
+  }
+
+  .illustrations-descr__adaptive.illustrations-descr {
+    height: 100%;
+  }
+
+  .illustrations-wrapper.illustrations-wrapper__position {
+    padding-bottom: 65px;
   }
 }
 @media (max-width: 700px) {
@@ -1313,6 +1355,27 @@
     font-size: 25px;
     margin-top: -28px;
     margin-bottom: 62px;
+  }
+
+  .storyboards-title.illustrations-title {
+    font-size: 57px;
+  }
+
+  .illustrations-wrapper .storyboards-text.illustrations-text {
+    width: 250px;
+    text-align: center;
+  }
+
+  .illustrations-wrapper .illustrations-text.storyboards-text {
+    font-size: 16px;
+  }
+
+  .illustrations-wrapper .illustrations-text.storyboards-text::after {
+    left: 163px;
+  }
+
+  .illustrations-wrapper.illustrations-wrapper__position {
+    padding-bottom: 40px;
   }
 }
 @media (max-width: 400px) {
