@@ -418,6 +418,19 @@
   .commercial .explainer__storytelling-title.commercial-adaptive {
     margin-bottom: -30px;
   }
+
+  .sandora-fruits.global_wrapper .sandora-fruits__title {
+    font-size: 35px;
+  }
+
+  .global_wrapper__decr.sandora-fruits__descr .global_wrapper-title {
+    font-size: 35px;
+  }
+
+  .global_wrapper__decr.sandora-fruits__descr span {
+    font-size: 23px;
+    line-height: 30px;
+  }
 }
 @media (max-width: 765px) {
   .portfolio-content .portfolio-inner ul li {
@@ -654,6 +667,10 @@
   .storytelling-conten__item .storytelling-conten__item-descr span {
     font-size: 17px;
   }
+
+  .storyboards.storyboards-adaptive {
+    padding: 18px 10px 36px;
+  }
 }
 @media (max-width: 730px) {
   .our__family.bgi-box {
@@ -703,6 +720,62 @@
   .storytelling-contentvideo__inner .storytelling__text-block.storytelling__texth1 {
     left: -73px;
   }
+
+  .storyboards-adaptive .storyboards-title {
+    transform: scale(0.8);
+  }
+
+  .storyboards-adaptive .storyboards-text {
+    margin-bottom: 12px;
+  }
+
+  .storyboards-wrapper__position.storyboards-wrapper::before {
+    left: 0;
+    right: 0;
+  }
+
+  .storyboards-content-item .storyboards_content--row {
+    flex-direction: column;
+    padding: 0;
+  }
+  .storyboards-content-item .storyboards_content--row .monwake_svg {
+    order: 2;
+  }
+  .storyboards-content-item .storyboards_content--row .storyboards-content_img-order {
+    order: 1;
+  }
+
+  .storyboards_content--row .storyboards-content_text {
+    max-width: 100%;
+    margin-top: 15px;
+    padding: 0 10px 20px;
+  }
+
+  .storyboards-content-item .storyboards-content_text::after {
+    display: none;
+  }
+
+  .storyboards-content_text--adaptive.font {
+    font-size: 16px;
+  }
+
+  .storyboards-content_text--adaptive.storyboards__content-float__item p {
+    margin-bottom: 0;
+  }
+
+  .storyboards__content-float .storyboards__content-float-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .storyboards__content-float__item.storyboards-content_text--adaptive {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .storyboards-content_text--adaptive {
+    order: 1;
+  }
 }
 @media (max-width: 700px) {
   .explainer__item .explindex__item-title {
@@ -716,8 +789,15 @@
   }
 
   .explainer__item .explainer__item-btn {
+    font-size: 30px;
     margin-top: 40px;
     margin-bottom: 60px;
+  }
+
+  .sandora-fruits.global_wrapper .sandora-fruits__title {
+    font-size: 30px;
+    margin-top: -45px;
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 640px) {
@@ -868,6 +948,12 @@
   .storytelling-contentvideo__inner .storytelling-conten__item h2 {
     font-size: 76px;
   }
+
+  .sandora-fruits.global_wrapper .sandora-fruits__title {
+    font-size: 28px;
+    margin-top: -38px;
+    margin-bottom: 54px;
+  }
 }
 @media (max-width: 556px) {
   .story-box .story-box__title {
@@ -937,10 +1023,27 @@
     padding-top: 20px;
     left: -13px;
   }
+
+  .sandora-fruits.global_wrapper .sandora-fruits__title {
+    margin-top: -36px;
+    margin-bottom: 55px;
+  }
 }
 @media (max-width: 540px) {
   .explainer__wrapper.commercial-services__wrapper .commercial-watisit-title::after {
     display: none;
+  }
+
+  .storyboards-adaptive .storyboards-title {
+    max-width: 450px;
+    width: 100%;
+  }
+  .storyboards-adaptive .storyboards-title img {
+    width: 100%;
+  }
+
+  .storyboards.storyboards-adaptive .storyboards-wrapper::before {
+    top: -2%;
   }
 }
 @media (max-width: 500px) {
@@ -1059,6 +1162,23 @@
 
   .explainer__wrapper.cartoon__wrapper.cartoon-adaptive__wrapper .explainer__watisit-text {
     margin-right: -53px;
+  }
+
+  .storyboards-another .storyboards-another__text {
+    width: 100%;
+  }
+
+  .animated-frame__item.sandora-fruits__item {
+    margin-bottom: 30px;
+  }
+
+  .global_wrapper__decr.sandora-fruits__descr .global_wrapper-title {
+    font-size: 30px;
+  }
+
+  .global_wrapper__decr.sandora-fruits__descr span {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 @media (max-width: 480px) {
@@ -1184,6 +1304,16 @@
   .cartoon__items-inner .storytelling__text-block {
     display: none;
   }
+
+  .storyboards.storyboards-adaptive .storyboards-wrapper::before {
+    height: 99%;
+  }
+
+  .sandora-fruits.global_wrapper .sandora-fruits__title {
+    font-size: 25px;
+    margin-top: -28px;
+    margin-bottom: 62px;
+  }
 }
 @media (max-width: 400px) {
   .contact-author__inner .contact-author__inner-title {
@@ -1243,6 +1373,23 @@
     top: -101px;
     right: 0;
     transform: scale(0.2) rotate(7deg);
+  }
+
+  .animated-frame__item.sandora-fruits__item {
+    margin-bottom: 45px;
+  }
+
+  .global_wrapper__decr.sandora-fruits__descr {
+    margin-top: -70px;
+  }
+
+  .global_wrapper__decr.sandora-fruits__descr .global_wrapper-title {
+    font-size: 25px;
+  }
+
+  .global_wrapper .global_wrapper__decr span {
+    font-size: 20px;
+    line-height: 22px;
   }
 }
 @media (max-width: 380px) {
@@ -1308,6 +1455,16 @@
   .questions__form-wrapper .questions__form-text {
     font-size: 16px;
     padding: 0 5px;
+  }
+
+  .storyboards-content_text--adaptive.font {
+    font-size: 14px;
+  }
+
+  .sandora-fruits.global_wrapper .sandora-fruits__title {
+    font-size: 22px;
+    margin-top: -20px;
+    margin-bottom: 73px;
   }
 }
 @media (max-width: 350px) {
