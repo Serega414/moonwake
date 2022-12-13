@@ -108,6 +108,14 @@ textarea {
   right: 40px;
 }
 
+.services__pages .testimonials .slick-arrow.slick-prev {
+  left: 0;
+}
+
+.services__pages .testimonials .slick-arrow.slick-next {
+  right: 0;
+}
+
 /* list social nav  */
 .btn-social {
   display: block;
@@ -372,6 +380,16 @@ textarea {
   bottom: 120px;
   right: 70px;
 } */
+.padding-block {
+  height: 100px;
+  width: 100%;
+}
+
+.padding-block2 {
+  height: 73px;
+  width: 100%;
+}
+
 .luxembourg__fibre-block .adaptive-font {
   color: #ffffff;
   font-family: "Open Sans", Arial, sans-serif;
@@ -385,4 +403,7 @@ textarea {
   }
 }
 
-/* background-color: #232323; */
+.watisit-links{
+  padding: 20px;
+  color: #000;
+}

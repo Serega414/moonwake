@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cartoon</title>
+    <title>Tutorial videos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,32 +12,20 @@
     />
     <link
       rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="/css/libs.min.css" />
     <link rel="stylesheet" href="/css/style.min.css" />
   </head>
+
   <body>
-    <!-- btn-form -->
-    <div class="btn-form btn-respon__down btn-form__page"></div>
-    <div class="header__form-slide">
-      <form>
-        <div class="form-inner">
-          <h1 class="btn-form__title">
-            Do you have any questions? Let's talk!
-          </h1>
-          <input type="text" placeholder="E-mail" required />
-          <input type="email" placeholder="Name" required />
-          <textarea placeholder="Questions" rows="5" required></textarea>
-          <button type="submit" href="/">Send</button>
-
-          <span>I agree the Terms of Service</span>
-        </div>
-      </form>
-    </div>
-
     <!-- list social nav -->
-    <div class="btn-social btn-social__page">
+    <div class="btn-social btn-respon__fixed">
       <ul class="btn-social__list btn-social__list--animated">
         <li>
           <a class="mail" target="_blank" href="https://mail.google.com/mail/">
@@ -47,7 +35,7 @@
               height="50"
               viewBox="0 0 50 50"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+              xmlns="https://www.w3.org/2000/svg"
             >
               <path
                 d="M25 43C34.9411 43 43 34.9411 43 25C43 15.0589 34.9411 7 25 7C15.0589 7 7 15.0589 7 25C7 34.9411 15.0589 43 25 43Z"
@@ -66,7 +54,7 @@
               height="50"
               viewBox="0 0 72 72"
               width="50"
-              xmlns="http://www.w3.org/2000/svg"
+              xmlns="https://www.w3.org/2000/svg"
             >
               <g fill="none" fill-rule="evenodd">
                 <path
@@ -100,9 +88,9 @@
               viewBox="0 0 512 512"
               width="50"
               xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:serif="http://www.serif.com/"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="https://www.w3.org/2000/svg"
+              xmlns:serif="https://www.serif.com/"
+              xmlns:xlink="https://www.w3.org/1999/xlink"
             >
               <g>
                 <path
@@ -125,7 +113,7 @@
               height="50"
               viewBox="0 0 50 50"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+              xmlns="https://www.w3.org/2000/svg"
             >
               <path
                 d="M25 43C34.9411 43 43 34.9411 43 25C43 15.0589 34.9411 7 25 7C15.0589 7 7 15.0589 7 25C7 34.9411 15.0589 43 25 43Z"
@@ -146,7 +134,7 @@
               height="50"
               viewBox="0 0 50 50"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+              xmlns="https://www.w3.org/2000/svg"
             >
               <path
                 d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50Z"
@@ -163,12 +151,29 @@
     </div>
     <!-- list social nav -->
     <!-- btn-form -->
+    <div class="btn-form btn-respon__fixed"></div>
+    <div class="header__form-slide">
+      <form>
+        <div class="form-inner">
+          <h1 class="btn-form__title">
+            Do you have any questions? Let's talk!
+          </h1>
+          <input type="text" placeholder="E-mail" required />
+          <input type="email" placeholder="Name" required />
+          <textarea placeholder="Questions" rows="5" required></textarea>
+          <button type="submit" href="/">Send</button>
 
+          <span>I agree the Terms of Service</span>
+        </div>
+      </form>
+    </div>
+
+    <!-- btn-form -->
     <header class="header">
       <div class="header-top">
         <div class="header__top-inner">
           <div class="header__top-logo">
-            <img src="./images/header-logo.png" alt="" />
+            <img src="/images/header-logo.png" alt="" />
           </div>
           <div class="header__burger">
             <span></span>
@@ -177,7 +182,7 @@
             <ul class="header__top-list">
               <li>
                 <a class="list-logo" href="#"
-                  ><img src="./images/header-logo.png" alt=""
+                  ><img src="/images/header-logo.png" alt=""
                 /></a>
               </li>
               <li>
@@ -187,7 +192,7 @@
                 <a href="commercial.html">Commercial</a>
               </li>
               <li>
-                <a href="cartoon.html" style="color: #ffd900">Cartoon</a>
+                <a href="cartoon.html">Cartoon</a>
               </li>
               <li>
                 <a href="services.html">Services</a>
@@ -199,7 +204,7 @@
                 <a href="about.html">About</a>
               </li>
               <li>
-                <a href="#">Blog</a>
+                <a href="not__found.html">Blog</a>
               </li>
               <li>
                 <a href="contact.html">Contact</a>
@@ -210,230 +215,185 @@
       </div>
     </header>
     <div class="padding-block"></div>
-    <section
-      class="explainer__glob explainer__glob-adaptive commercial cartoon"
-    >
-      <h1 class="explainer__storytelling-title cartoon-adaptive">
-        The cartoon<span>inspired by life</span>
-      </h1>
-      <div
-        class="explainer__storytelling-inner commercial__inner cartoon__inner"
-      >
-        <div class="explainer__storytelling-item cartoon-item">
-          <img
-            class="explainer__storytelling-img"
-            src="./images/cartoon-vera.png"
-            alt=""
-          />
-        </div>
-        <div class="explainer__storytelling-item cartoon-item">
-          <div class="explainer__storytelling-box">
-            <h2 class="explainer__storytelling-text">
-              Moonwake produces educational and entertainment content in a
-              cartoon form series for children and adults.
-            </h2>
-          </div>
-        </div>
-      </div>
-      <div
-        class="explainer__storytelling-content commercail__storytelling-content"
-      >
-        <div class="cartoon__items-inner">
-          <div class="storytelling__text-block">
-            <h1>Example of</h1>
-            <span>CARTOONY CHARACTERS</span>
-          </div>
-          <div class="cartoon-item__img">
-            <img src="./images/cartoon-img--item.jpg" alt="" />
-          </div>
-        </div>
-        <div class="storytelling-conten__item cartoon-content__item">
-          <h2>HOW</h2>
-          <h3>to create?</h3>
-          <div
-            class="storytelling-conten__item-descr cartoon-content__item-descr"
-          >
-            <span
-              >Creating process is very simple and similar to all other kinds of
-              animations, but all begins with story and script - this is the
-              most important part of creating the cartoons.</span
-            >
-            <br />
-            <span
-              >We are widely open for co-production with international partners
-              in the creative process. We specialize in frame by frame animation
-              and motion design, however, we use all kinds of techniques
-              according to project tasks.</span
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-    <section
-      class="explainer__wrapper cartoon__wrapper cartoon-adaptive__wrapper"
-    >
-      <div class="explainer__watisit-text">WHAT is it for</div>
-      <div class="explainer__watisit-title">
-        <img src="./images/cartoons-bg.png" alt="" />
-      </div>
-
-      <div class="explainer__watisit-inner cartoon__watisit-inner">
-        <div class="explainer__watisit-item wow anim-explainer1">
-          <div class="explainer__watisit-item--img">
-            <img
-              src="./images/commercial__watisit-item__infographic3.png"
-              alt=""
-            />
-          </div>
-          <div class="explainer__watisit-item--title">1. Book stories</div>
-        </div>
-        <div class="explainer__watisit-item wow anim-explainer2">
-          <div class="explainer__watisit-item--img">
-            <img
-              src="./images/explainer__watisit-item__infographics1.png"
-              alt=""
-            />
-          </div>
-          <div class="explainer__watisit-item--title">2. Since cartoons</div>
-        </div>
-        <div class="explainer__watisit-item wow anim-explainer3">
-          <div class="explainer__watisit-item--img">
-            <img
-              src="./images/explainer__watisit-item__infographics3.png"
-              alt=""
-            />
-          </div>
-          <div class="explainer__watisit-item--title">
-            3. Educational cartoons
-          </div>
-        </div>
-        <div class="explainer__watisit-item wow anim-explainer4">
-          <div class="explainer__watisit-item--img">
-            <img
-              src="./images/explainer__watisit-item__infographics4.png"
-              alt=""
-            />
-          </div>
-          <div class="explainer__watisit-item--title">4. Funny cartoons</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="explainer__processs">
-      <div class="explainer__processs-title">
-        PROCESS <span>of creation</span>
-      </div>
-      <div class="explainer__processs-inner">
-        <div class="explainer__processs-item">
-          <div class="explainer__processs-item1 wow">
-            <div class="explainer__processs-imgtext"><span>1.</span>SCRIPT</div>
-          </div>
-        </div>
-        <div class="explainer__processs-item--span wow"></div>
-        <div class="explainer__processs-item">
-          <div class="explainer__processs-item2 wow">
-            <div class="explainer__processs-imgtext">
-              <span>2.</span>ILLUSTRATION
-            </div>
-          </div>
-        </div>
-        <div class="explainer__processs-item--span wow"></div>
-        <div class="explainer__processs-item">
-          <div class="explainer__processs-item3 wow">
-            <div class="explainer__processs-imgtext">
-              <span>3.</span>ANIMATION
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="testimonials eplainer__testdispay">
+    <section class="services__pages">
       <div class="container">
-        <div class="testimonials-title">
-          <img src="/images/Testimonials.png" alt="" />
+        <div class="services__pages-title educational__videos-title">
+          Tutorial videos
         </div>
+      </div>
+      <div class="services__pages-img">
+        <img src="./images/services__pages-img.jpg" alt="" />
+      </div>
+      <div class="section-hr__videos">
+        <div class="section-hr__videos-title">Explainer video</div>
+        <div class="section-hr__videos-text">
+          It only takes 56 seconds to keep the viewer interested in an explainer
+          video. 56 seconds is what you have to tell your story to the world. 56
+          reasons to let us help.
+        </div>
+      </div>
+      <div class="container">
+        <div class="services__pages-inner">
+          <div class="services__pages-item">
+            <div class="services__pages-item__title">Tutorial videos</div>
+            <div class="services__pages-item__text">
+              This will be your step by step walkthrough on any process you
+              want. Either for your Client or your employees. You name it. We'll
+              make it memorable, simple and understandable. Using these videos
+              you can explain the safety regulations, introduce new members of
+              the team to the workflow, or introduce long time employees to new
+              techniques, or recently bought equipment. If you want to keep your
+              crew safe at work you don't just write 'no yolo' and hope for the
+              best. You want to make sure everybody knows the boundaries. Same
+              goes for teaching your workers the best way to handle new
+              equipment. That's where instructional videos come in. By
+              delivering a clear, memorable instruction on how, where and when.
+            </div>
+          </div>
+          <div class="services__pages-item">
+            <div class="services__pages-item__user">
+              <img src="./images/services__pages-item__user.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="character-design__bg tutorial-videos__bg">
+        <img src="./images/character-design__bg4.jpg" alt="" />
+      </div>
+
+      <section class="testimonials">
         <div class="testimonials__inner">
-          <div class="testimonials-slider">
+          <div class="testimonials-slider services__pages-slider">
             <div class="testimonials-item">
               <div class="testimonials-item__fl">
                 <div class="testimonials-item__img">
-                  <img src="/images/avatar/user-1.jpg" alt="" />
+                  <img src="/images/avatar/user-3.jpg" alt="" />
                 </div>
-                <div class="testimonials-item__box">
+                <div class="testimonials-item__box services__pages-item__box">
                   <div class="testimonials-item__descr">
-                    Moonwake agency were amazing to work with. They had an
-                    excellent workflow that was quick and easy. The process and
-                    attention to detail were highly impressive.
+                    The principal element of Suprematism in painting, as in
+                    architecture, is its liberation from all social or
+                    materialist tendencies. Through Suprematism, art comes into
+                    its pure and unpolluted form.
                   </div>
-                  <div class="testimonials-item__name">Joel Reymont</div>
-                  <div class="testimonials-item__post">CEO, Stegos AG</div>
+                  <div class="testimonials-item__name">Sarah Lewin</div>
+                  <div class="testimonials-item__post">
+                    Projects manager in Pixels
+                  </div>
                 </div>
               </div>
             </div>
             <div class="testimonials-item">
               <div class="testimonials-item__fl">
                 <div class="testimonials-item__img">
-                  <img src="/images/avatar/user-2.png" alt="" />
+                  <img src="./images/avatar/user-4.jpg" alt="" />
                 </div>
-                <div class="testimonials-item__box">
+                <div class="testimonials-item__box services__pages-item__box">
                   <div class="testimonials-item__descr">
-                    Despite a time zone difference, Moonwake team responds
-                    promptly, assisting a smooth collaboration. Each member of
-                    the Moonwake agency including art director and designer was
-                    exceptionally easy to work with.
+                    I think if you do something and it turns out pretty good,
+                    then you should go do something else wonderful, not dwell on
+                    it for too long.
                   </div>
-                  <div class="testimonials-item__name">Bilbo Sergio</div>
+                  <div class="testimonials-item__name">Samuel Willson</div>
                   <div class="testimonials-item__post">
-                    Owner of Be Happy 24
+                    Creative director in DD agency
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonials-item">
+              <div class="testimonials-item__fl">
+                <div class="testimonials-item__img">
+                  <img src="./images/avatar/user-5.jpg" alt="" />
+                </div>
+                <div class="testimonials-item__box services__pages-item__box">
+                  <div class="testimonials-item__descr">
+                    You can't connect the dots looking forward, you can only
+                    connect them looking backwards.
+                  </div>
+                  <div class="testimonials-item__name">Alex Larkins</div>
+                  <div class="testimonials-item__post">
+                    Founder of Pic Pen studio
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+      <div class="container">
+        <div class="services__pages-work services__pages-adaptive">
+          <div class="services__pages-work_title">WORK</div>
+          <div class="services__pages-work__inner">
+            <div class="services__pages-work__item">
+              <div class="services__pages-work__item-img">
+                <img src="./images/services__pages-work__item-img.jpg" alt="" />
+              </div>
+              <div class="services__pages-work__item-title">
+                Dutch story of wooden house
+              </div>
+              <div class="services__pages-work__item-text">
+                The film is about a small village of carvers on the north of
+                Viborg. There are great set design scenes and the film is full
+                of delightful applied art objects.
+              </div>
+              <div class="services__pages-work__item-date">02.10.2021</div>
+            </div>
+            <div class="services__pages-work__item">
+              <div class="services__pages-work__item-img">
+                <img
+                  src="./images/services__pages-work__item-img2.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="services__pages-work__item-title">
+                October book fair
+              </div>
+              <div class="services__pages-work__item-text">
+                This is the most important event of the literary market. The
+                festival takes place on the territory of the cluster Star in the
+                second pavilion
+              </div>
+              <div class="services__pages-work__item-date">03.10.2021</div>
+            </div>
+            <div class="services__pages-work__item">
+              <div class="services__pages-work__item-img">
+                <img
+                  src="./images/services__pages-work__item-img3.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="services__pages-work__item-title">
+                September market
+              </div>
+              <div class="services__pages-work__item-text">
+                Wow! Amanda Steiner ceramics on September market. Also, meet
+                talented young creators in the jewelry section and check some
+                handmade cosmetics.
+              </div>
+              <div class="services__pages-work__item-date">03.10.2021</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="services-questions__form">
-      <div class="questions__form-wrapper">
-        <div class="questions__form-title">HAVE A QUESTION?</div>
-        <div class="questions__form-text">
-          Once a month you will learn about our latest features and hottest
-          news. And no spam of course.
-        </div>
-        <div class="form__adpative-services">
-          <form>
-            <input type="text" name="field1" placeholder="Your Name" required />
-            <input
-              type="email"
-              name="field2"
-              placeholder="Email Address"
-              required
-            />
-            <input
-              class="services__form-submit"
-              type="submit"
-              value="Subscribe"
-            />
-          </form>
-        </div>
-      </div>
-    </section>
-    <footer class="footer bgc__color">
+
+    <footer class="footer">
       <div class="container">
         <div class="footer__inner">
           <div class="footer-item footer-item__logo">
             <a href="#" class="footer-logo">
-              <img src="./images/header-logo.png" alt="" />
+              <img src="/images/header-logo.png" alt="" />
             </a>
             <ul class="footer-social">
               <li>
-                <a href="#"><img src="./images/facebook.svg" alt="" /></a>
+                <a href="#"><img src="/images/facebook.svg" alt="" /></a>
               </li>
               <li>
-                <a href="#"><img src="./images/youtube.svg" alt="" /></a>
+                <a href="#"><img src="/images/youtube.svg" alt="" /></a>
               </li>
               <li>
-                <a href="#"><img src="./images/instagram.svg" alt="" /></a>
+                <a href="#"><img src="/images/instagram.svg" alt="" /></a>
               </li>
             </ul>
             <a href="#" class="footer-copy">© 2020 Moonwake Agency</a>
