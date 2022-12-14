@@ -120,6 +120,10 @@
   .story .story-box__text h3 {
     margin-top: 100px;
   }
+
+  .head__animated-marketing.head__animated-marketing__adaptive span {
+    font-size: 52px;
+  }
 }
 @media (max-width: 1099px) {
   .map-contact .map-contact__item {
@@ -380,6 +384,20 @@
 @media (max-width: 860px) {
   .testimonials .testimonials-title img {
     max-width: 450px;
+  }
+
+  .head__animated-marketing.head__animated-marketing__adaptive img {
+    height: 437px;
+  }
+
+  .head__animated-marketing.head__animated-marketing__adaptive span {
+    font-size: 40px;
+  }
+
+  .head__animated-marketing-logo__adsolute.head__animated-marketing-logo__adsolute-adaptive {
+    position: absolute;
+    top: 144px;
+    right: 2%;
   }
 }
 @media (max-width: 845px) {
@@ -810,6 +828,10 @@
   .services__pages .services__pages-img::after {
     top: 215px;
   }
+
+  .head__animated-marketing-logo__adsolute.head__animated-marketing-logo__adsolute-adaptive {
+    display: none;
+  }
 }
 @media (max-width: 730px) {
   .our__family.bgi-box {
@@ -1078,6 +1100,14 @@
   .explainer__wrapper.cartoon__wrapper.cartoon-adaptive__wrapper .explainer__watisit-text {
     margin-right: -87px;
   }
+
+  .head__animated-marketing.head__animated-marketing__adaptive img {
+    height: 358px;
+  }
+
+  .head__animated-marketing.head__animated-marketing__adaptive span {
+    font-size: 29px;
+  }
 }
 @media (max-width: 620px) {
   .our__family.bgi-box {
@@ -1284,6 +1314,14 @@
   .services__pages .testimonials-item__box.services__pages-item__box .testimonials-item__descr {
     font-size: 12px;
     line-height: 25px;
+  }
+
+  .head__animated-marketing.head__animated-marketing__adaptive img {
+    height: 264px;
+  }
+
+  .head__animated-marketing.head__animated-marketing__adaptive span {
+    font-size: 23px;
   }
 }
 @media (max-width: 500px) {
@@ -1737,6 +1775,14 @@
 
   .aniMarketing-block .aniMarketing-block__img img {
     max-width: 290px;
+  }
+
+  .head__animated-marketing.head__animated-marketing__adaptive img {
+    height: 230px;
+  }
+
+  .head__animated-marketing.head__animated-marketing__adaptive span {
+    font-size: 20px;
   }
 }
 @media (max-width: 380px) {
@@ -4969,6 +5015,7 @@ h1.contact-title::after {
   width: 100%;
   text-align: center;
   position: relative;
+  overflow-x: hidden;
 }
 .head__animated-marketing img {
   max-width: 1620px;
@@ -4978,16 +5025,164 @@ h1.contact-title::after {
   object-fit: cover;
 }
 
-.head__animated-marketing::after {
-  content: "";
+.head__animated-marketing span {
   position: absolute;
-  z-index: 9999;
-  bottom: 40px;
-  right: 40px;
-  background: url(../images/aniMarketing-block-logo.png);
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: #ffffff;
+  font-size: 64px;
+  font-family: "Arial", Arial, sans-serif;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+.head__animated-marketing-logo__adsolute {
+  position: absolute;
+  top: 225px;
+  right: 2%;
+}
+
+.head__animated-marketing-logo__wrapper {
+  position: relative;
+}
+
+.head__animated-marketing-logo {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  width: 246px;
+}
+.head__animated-marketing-logo img {
   background-repeat: no-repeat;
   background-position: center;
-  width: 585px;
+  object-fit: cover;
+  width: 100%;
   height: 546px;
-  transform: scale(0.3);
+  transform: scale(0.4);
+}
+
+.head__animated-marketing-logo__title {
+  position: absolute;
+  bottom: -361px;
+  right: 37px;
+  width: 205px;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Arial", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+.animated-marketing-row {
+  margin: 0 auto;
+  max-width: 920px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.animated-marketing-row .contact-author__item {
+  display: flex;
+  flex-direction: row;
+}
+.animated-marketing-row .contact-author__item .author__item-avatarka {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  margin-right: 30px;
+}
+.animated-marketing-row .contact-author__item-written span {
+  color: #000000;
+  font-size: 14px;
+  font-family: "Arial", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+}
+.animated-marketing-row .contact-author__item-written .author__item-title {
+  font-size: 18px;
+  font-family: "Arial", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.animated-marketing-row .animated-marketing-row__date span {
+  color: #000000;
+  font-size: 14px;
+  font-family: "Arial", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+.animated__marketing-content {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.animated__marketing-content__title {
+  text-align: center;
+  color: #000000;
+  font-size: 32px;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.animated__marketing-content__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.animated__marketing-content__item {
+  margin-bottom: 40px;
+}
+.animated__marketing-content__item span {
+  color: #000000;
+  font-size: 20px;
+  font-family: "Arial", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+.animated__marketing-content__item-title {
+  color: #6d39ec;
+  font-size: 20px;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.animated__marketing-content__item-text {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.animated__marketing-content__video {
+  max-width: 748px;
+  margin: 0 auto 50px;
+}
+.animated__marketing-content__video .global_wrapper__item {
+  padding: 0 0 56.25% 0;
+}
+
+.animated__marketing-content-img {
+  max-width: 1110px;
+  width: 100%;
+  height: 500px;
+  margin: 0 auto 50px;
+  padding: 10px 20px;
+}
+.animated__marketing-content-img img {
+  height: 500px;
+  background-position: center;
+  width: 100%;
+  object-fit: cover;
 }
