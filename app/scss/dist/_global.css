@@ -156,6 +156,7 @@ textarea {
   position: absolute;
   background-image: url(../images/icons/btn-social.svg);
   background-repeat: no-repeat;
+  background-size: contain;
   height: 35px;
   width: 35px;
   top: 13px;
@@ -168,13 +169,23 @@ textarea {
   background: #ffffff;
 }
 
-.btn-social.active::after,
 .btn-form.active::after {
   position: absolute;
   background-image: url(../images/icons/btn-social-hrest.svg);
-  top: 23px;
-  left: 23px;
+  background-size: contain;
+  top: 17px;
+  left: 17px;
   transition: all 0.3s ease-in-out;
+}
+
+.btn-social.active::after {
+  position: absolute;
+  background-image: url(../images/icons/btn-social-hrest.svg);
+  background-size: contain;
+  top: 16px;
+  left: 16px;
+  height: 30px;
+  width: 30px;
 }
 
 .btn-social__list {
@@ -301,6 +312,7 @@ textarea {
   position: absolute;
   background-image: url(../images/icons/btn-form.svg);
   background-repeat: no-repeat;
+  background-size: contain;
   height: 29px;
   width: 29px;
   top: 18px;
@@ -401,9 +413,4 @@ textarea {
   .responz.padTop {
     padding-top: 0;
   }
-}
-
-.watisit-links{
-  padding: 20px;
-  color: #000;
 }
