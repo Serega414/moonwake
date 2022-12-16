@@ -1725,6 +1725,51 @@
   .animated-marketing-row.animated-marketing-row__adaptive .animated-marketing-row__date {
     display: none;
   }
+
+  .moonwake__item .moonwake__item-text {
+    max-width: 100%;
+  }
+
+  .moonwake__item .moonwake__item-links {
+    width: 100%;
+  }
+
+  .moonwake__item-links .moonwake__item-link {
+    width: 110px;
+    height: 110px;
+  }
+  .moonwake__item-links .moonwake__item-link + .moonwake__item-link {
+    margin-left: 20px;
+  }
+
+  .btn-social.btn-respon__fixed .btn-social__list {
+    left: 0;
+  }
+
+  .btn-social.btn-respon__fixed,
+.btn-form.btn-respon__fixed {
+    height: 50px;
+    width: 50px;
+  }
+
+  .btn-respon__fixed.btn-social::after {
+    width: 24px;
+    height: 24px;
+  }
+
+  .btn-respon__fixed.btn-social.active::after,
+.btn-respon__fixed.btn-form.active::after {
+    top: 14px;
+    left: 14px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .btn-respon__fixed.btn-form::after {
+    width: 24px;
+    height: 24px;
+    left: 13px;
+  }
 }
 @media (max-width: 420px) {
   .our__family-inner .our__family-title {
@@ -1846,10 +1891,12 @@
 @media (max-width: 380px) {
   .moonwake__inner .moonwake__item-links {
     justify-content: center;
+    flex-direction: column;
   }
 
   .moonwake__item-links .moonwake__item-link.color-box {
-    margin-left: 10px;
+    margin-left: 0;
+    margin-top: 20px;
   }
 
   .services-content .services-title img {
@@ -2015,6 +2062,12 @@ p {
   list-style: none;
 }
 
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   color: #000;
   font-family: "Open Sans", sans-serif;
@@ -2145,6 +2198,7 @@ textarea {
   position: absolute;
   background-image: url(../images/icons/btn-social.svg);
   background-repeat: no-repeat;
+  background-size: contain;
   height: 35px;
   width: 35px;
   top: 13px;
@@ -2157,13 +2211,23 @@ textarea {
   background: #ffffff;
 }
 
-.btn-social.active::after,
 .btn-form.active::after {
   position: absolute;
   background-image: url(../images/icons/btn-social-hrest.svg);
-  top: 23px;
-  left: 23px;
+  background-size: contain;
+  top: 17px;
+  left: 17px;
   transition: all 0.3s ease-in-out;
+}
+
+.btn-social.active::after {
+  position: absolute;
+  background-image: url(../images/icons/btn-social-hrest.svg);
+  background-size: contain;
+  top: 16px;
+  left: 16px;
+  height: 30px;
+  width: 30px;
 }
 
 .btn-social__list {
@@ -2290,6 +2354,7 @@ textarea {
   position: absolute;
   background-image: url(../images/icons/btn-form.svg);
   background-repeat: no-repeat;
+  background-size: contain;
   height: 29px;
   width: 29px;
   top: 18px;
@@ -3963,6 +4028,7 @@ h1.contact-title::after {
 }
 
 .explainer__watisit-item--title {
+  color: #000;
   font-size: 24px;
   font-weight: 700;
 }

@@ -26,6 +26,12 @@ p {
   list-style: none;
 }
 
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   color: #000;
   font-family: "Open Sans", sans-serif;
