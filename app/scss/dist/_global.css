@@ -126,7 +126,7 @@ textarea {
 .btn-social {
   display: block;
   position: fixed;
-  bottom: 170px;
+  bottom: 150px;
   right: 40px;
   height: 60px;
   width: 60px;
@@ -228,7 +228,7 @@ textarea {
 .btn-form {
   display: block;
   position: fixed;
-  bottom: 100px;
+  bottom: 80px;
   right: 40px;
   height: 60px;
   width: 60px;
@@ -390,14 +390,6 @@ textarea {
   right: 20px;
 }
 
-/* .btn-social.btn-social__page {
-  bottom: 190px;
-  right: 70px;
-}
-.btn-form.btn-form__page {
-  bottom: 120px;
-  right: 70px;
-} */
 .padding-block {
   height: 100px;
   width: 100%;

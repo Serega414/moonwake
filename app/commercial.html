@@ -18,26 +18,8 @@
     <link rel="stylesheet" href="/css/style.min.css" />
   </head>
   <body>
-    <!-- btn-form -->
-    <div class="btn-form btn-respon__down btn-form__page"></div>
-    <div class="header__form-slide">
-      <form>
-        <div class="form-inner">
-          <h1 class="btn-form__title">
-            Do you have any questions? Let's talk!
-          </h1>
-          <input type="text" placeholder="E-mail" required />
-          <input type="email" placeholder="Name" required />
-          <textarea placeholder="Questions" rows="5" required></textarea>
-          <button type="submit" href="/">Send</button>
-
-          <span>I agree the Terms of Service</span>
-        </div>
-      </form>
-    </div>
-
     <!-- list social nav -->
-    <div class="btn-social btn-social__page">
+    <div class="btn-social btn-respon__fixed">
       <ul class="btn-social__list btn-social__list--animated">
         <li>
           <a class="mail" target="_blank" href="https://mail.google.com/mail/">
@@ -163,20 +145,37 @@
     </div>
     <!-- list social nav -->
     <!-- btn-form -->
+    <div class="btn-form btn-respon__fixed"></div>
+    <div class="header__form-slide">
+      <form>
+        <div class="form-inner">
+          <h1 class="btn-form__title">
+            Do you have any questions? Let's talk!
+          </h1>
+          <input type="text" placeholder="E-mail" required />
+          <input type="email" placeholder="Name" required />
+          <textarea placeholder="Questions" rows="5" required></textarea>
+          <button type="submit" href="/">Send</button>
 
+          <span>I agree the Terms of Service</span>
+        </div>
+      </form>
+    </div>
+
+    <!-- btn-form -->
     <header class="header">
       <div class="header-top">
         <div class="header__top-inner">
-          <div class="header__top-logo">
-            <img src="./images/header-logo.png" alt="" />
-          </div>
+          <a href="index.html" class="header__top-logo">
+            <img src="/images/header-logo.png" alt="" />
+          </a>
           <div class="header__burger">
             <span></span>
           </div>
           <div class="header__top-menu">
             <ul class="header__top-list">
               <li>
-                <a class="list-logo" href="#"
+                <a class="list-logo" href="index.html"
                   ><img src="./images/header-logo.png" alt=""
                 /></a>
               </li>
@@ -285,7 +284,10 @@
       </div>
       <div class="explainer__watisit-text">where to use</div>
       <div class="explainer__watisit-inner">
-        <div class="explainer__watisit-item wow anim-explainer1">
+        <a
+          href="sevices-Illustrations.html"
+          class="explainer__watisit-item wow anim-explainer1"
+        >
           <div class="explainer__watisit-item--img">
             <img
               src="./images/commercial__watisit-item__infographic1.png"
@@ -293,8 +295,11 @@
             />
           </div>
           <div class="explainer__watisit-item--title">1. Illustration</div>
-        </div>
-        <div class="explainer__watisit-item wow anim-explainer2">
+        </a>
+        <a
+          href="services-motion_design.html"
+          class="explainer__watisit-item wow anim-explainer2"
+        >
           <div class="explainer__watisit-item--img">
             <img
               src="./images/explainer__watisit-item__infographics6.png"
@@ -302,8 +307,11 @@
             />
           </div>
           <div class="explainer__watisit-item--title">2. Motion design</div>
-        </div>
-        <div class="explainer__watisit-item wow anim-explainer3">
+        </a>
+        <a
+          href="services-video-animation.html"
+          class="explainer__watisit-item wow anim-explainer3"
+        >
           <div class="explainer__watisit-item--img">
             <img
               src="./images/commercial__watisit-item__infographic2.png"
@@ -311,8 +319,11 @@
             />
           </div>
           <div class="explainer__watisit-item--title">3. Animation</div>
-        </div>
-        <div class="explainer__watisit-item wow anim-explainer4">
+        </a>
+        <a
+          href="services-script__writing.html"
+          class="explainer__watisit-item wow anim-explainer4"
+        >
           <div class="explainer__watisit-item--img">
             <img
               src="./images/commercial__watisit-item__infographic3.png"
@@ -320,8 +331,11 @@
             />
           </div>
           <div class="explainer__watisit-item--title">4. Script writing</div>
-        </div>
-        <div class="explainer__watisit-item wow anim-explainer5">
+        </a>
+        <a
+          href="services-storyboards.html"
+          class="explainer__watisit-item wow anim-explainer5"
+        >
           <div class="explainer__watisit-item--img">
             <img
               src="./images/explainer__watisit-item__infographics5.png"
@@ -329,8 +343,11 @@
             />
           </div>
           <div class="explainer__watisit-item--title">5. Storyboards</div>
-        </div>
-        <div class="explainer__watisit-item wow anim-explainer6">
+        </a>
+        <a
+          href="services-character__design.html"
+          class="explainer__watisit-item wow anim-explainer6"
+        >
           <div class="explainer__watisit-item--img">
             <img
               src="./images/commercial__watisit-item__infographic4.png"
@@ -338,7 +355,7 @@
             />
           </div>
           <div class="explainer__watisit-item--title">6. Character design</div>
-        </div>
+        </a>
       </div>
     </section>
 
