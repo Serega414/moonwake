@@ -1,8 +1,4 @@
 @media (max-width: 1400px) {
-  body.lock {
-    overflow: hidden;
-  }
-
   .illustrations-descr__adaptive.illustrations-descr {
     background-size: cover;
   }
@@ -277,6 +273,16 @@
     font-size: 19px;
   }
 
+  .explainer__processs .explainer__processs-inner .explainer__processs-item3::after {
+    top: -12px;
+    height: 281px;
+    transform: scale(1.2);
+  }
+
+  .commercial .explainer__storytelling-title.cartoon-adaptive {
+    margin-left: 194px;
+  }
+
   .storytelling-conten__item .storytelling-conten__item-descr::before {
     left: -88px;
   }
@@ -426,9 +432,12 @@
     display: none;
   }
 
-  .cartoon .explainer__storytelling-title.cartoon-adaptive {
-    margin-right: -173px;
-    margin-bottom: -50px;
+  .commercial .explainer__storytelling-title.cartoon-adaptive {
+    font-size: 46px;
+    line-height: 35px;
+  }
+  .commercial .explainer__storytelling-title.cartoon-adaptive span {
+    font-size: 36px;
   }
 
   .services__pages .services__pages-content-bg img {
@@ -566,6 +575,10 @@
   }
 }
 @media (max-width: 760px) {
+  body.lock {
+    overflow: hidden;
+  }
+
   .padding-block {
     display: none;
   }
@@ -808,6 +821,14 @@
     padding: 5px 10px 10px;
   }
 
+  .business-adaptive .services__pages-title.educational__videos-title {
+    font-size: 72px;
+  }
+
+  .services__pages.business-adaptive .services__pages-img::after {
+    top: 203px;
+  }
+
   .services__pages .services__pages-img::after {
     top: 215px;
   }
@@ -987,11 +1008,37 @@
     text-align: center;
     font-size: 18px;
   }
+
+  .explainer__wrapper.commercial-services__wrapper .commercial-watisit-title img {
+    width: 85%;
+  }
+
+  .explainer__wrapper.commercial-services__wrapper .explainer__watisit-text__posution-relative .explainer__watisit-text {
+    font-size: 59px;
+    line-height: 40px;
+  }
+
+  .explainer__wrapper.commercial-services__wrapper .explainer__watisit-text__posution-relative {
+    width: 368px;
+    left: 25px;
+  }
 }
 @media (max-width: 670px) {
   .services__pages-title.educational__videos-title {
     font-size: 67px;
     padding-bottom: 62px;
+  }
+
+  .services__pages .services__pages-img::after {
+    top: 209px;
+  }
+
+  .business-adaptive .services__pages-title.educational__videos-title {
+    font-size: 65px;
+  }
+
+  .business-adaptive.services__pages .services__pages-img::after {
+    top: 206px;
   }
 }
 @media (max-width: 640px) {
@@ -1007,6 +1054,10 @@
 
   .explainer__storytelling-item .explainer__storytelling-img {
     display: none;
+  }
+
+  .commercial .explainer__storytelling-title.cartoon-adaptive {
+    margin-bottom: 15px;
   }
 
   .explainer__storytelling-box.explainer__storytelling-box::after {
@@ -1028,9 +1079,12 @@
     max-width: 380px;
   }
 
+  .explainer__wrapper .explainer__watisit-text__posution-relative {
+    left: 30px;
+  }
+
   .explainer__wrapper .explainer__watisit-text {
-    margin-right: -88px;
-    font-size: 43px;
+    font-size: 38px;
   }
 
   .explainer__wrapper .explainer__watisit-title::before {
@@ -1069,19 +1123,6 @@
     font-size: 59px;
     line-height: 45px;
     font-weight: 400;
-    margin-right: -54px;
-  }
-
-  .explainer__wrapper.commercial-services__wrapper .commercial-watisit-title::after {
-    right: -163px;
-  }
-
-  .cartoon .explainer__storytelling-title.cartoon-adaptive {
-    margin-bottom: 40px;
-  }
-
-  .explainer__wrapper.cartoon__wrapper.cartoon-adaptive__wrapper .explainer__watisit-text {
-    margin-right: -87px;
   }
 
   .head__animated-marketing.head__animated-marketing__adaptive img {
@@ -1185,6 +1226,40 @@
     top: 263px;
     height: 292px;
   }
+
+  .business-adaptive .services__pages-title.educational__videos-title {
+    font-size: 56px;
+  }
+
+  .business-adaptive.services__pages .services__pages-img::after {
+    top: 196px;
+  }
+
+  .explainer__wrapper.commercial-services__wrapper .explainer__watisit-text__posution-relative .explainer__watisit-text {
+    font-size: 52px;
+    line-height: 32px;
+  }
+
+  .explainer__wrapper.commercial-services__wrapper .explainer__watisit-text__posution-relative {
+    width: 315px;
+    left: 25px;
+  }
+
+  .explainer__wrapper.commercial-services__wrapper .commercial-watisit-title::after {
+    top: 7px;
+    right: -70px;
+  }
+
+  .commercial .explainer__storytelling-title.commercial-adaptive {
+    font-size: 66px;
+    line-height: 48px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .commercial .explainer__storytelling-title.commercial-adaptive span {
+    font-size: 46px;
+    line-height: 46px;
+  }
 }
 @media (max-width: 570px) {
   .services__pages .services__pages-content-bg__text {
@@ -1258,16 +1333,21 @@
 
   .explainer__wrapper .explainer__watisit-title {
     max-width: 350px;
+    padding-top: 0px;
+  }
+
+  .explainer__wrapper .explainer__watisit-text__posution-relative {
+    left: 15px;
   }
 
   .explainer__wrapper .explainer__watisit-text {
-    margin-right: -71px;
-    font-size: 41px;
+    font-size: 35px;
+    padding-top: 10px;
   }
 
   .storytelling-contentvideo__inner .storytelling__text-block.storytelling__texth1 {
     padding-top: 20px;
-    left: -13px;
+    left: -50px;
   }
 
   .sandora-fruits.global_wrapper .sandora-fruits__title {
@@ -1283,12 +1363,16 @@
   .services__pages .services__pages-img::after {
     top: 162px;
   }
-}
-@media (max-width: 540px) {
-  .explainer__wrapper.commercial-services__wrapper .commercial-watisit-title::after {
-    display: none;
+
+  .business-adaptive.services__pages .services__pages-img::after {
+    top: 148px;
   }
 
+  .business-adaptive .services__pages-title.educational__videos-title {
+    font-size: 47px;
+  }
+}
+@media (max-width: 540px) {
   .storyboards-adaptive .storyboards-title {
     max-width: 450px;
     width: 100%;
@@ -1388,18 +1472,12 @@
     max-width: 330px;
   }
 
-  .explainer__wrapper .explainer__watisit-text {
-    margin-right: -58px;
-    font-size: 40px;
-  }
-
-  .explainer__wrapper .explainer__watisit-title {
-    max-width: 300px;
+  .explainer__wrapper .explainer__watisit-text__posution-relative {
+    left: 5px;
   }
 
   .explainer__wrapper .explainer__watisit-text {
-    margin-right: -58px;
-    font-size: 36px;
+    font-size: 30px;
   }
 
   .explainer__wrapper .explainer__watisit-title::before {
@@ -1429,12 +1507,14 @@
     transform: scale(0.3) rotate(7deg);
   }
 
-  .cartoon .explainer__storytelling-title.cartoon-adaptive {
-    margin-right: -100px;
+  .commercial .explainer__storytelling-title.cartoon-adaptive {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
   }
 
-  .explainer__wrapper.cartoon__wrapper.cartoon-adaptive__wrapper .explainer__watisit-text {
-    margin-right: -53px;
+  .commercail__storytelling-content .storytelling-conten__item.cartoon-content__item h2 {
+    width: 100%;
   }
 
   .storyboards-another .storyboards-another__text {
@@ -1477,7 +1557,10 @@
 
   .services__pages .services__pages-title.educational__videos-title {
     font-size: 46px;
-    padding-bottom: 37px;
+  }
+
+  .explainer__wrapper.commercial-services__wrapper .commercial-watisit-title::after {
+    display: none;
   }
 }
 @media (max-width: 470px) {
@@ -1599,14 +1682,19 @@
     width: 250px;
   }
 
+  .explainer__wrapper.commercial-services__wrapper .explainer__watisit-text__posution-relative .explainer__watisit-text {
+    font-size: 42px;
+    line-height: 27px;
+  }
+
+  .explainer__wrapper.commercial-services__wrapper .explainer__watisit-text__posution-relative {
+    width: 255px;
+    left: 17px;
+  }
+
   .explainer__wrapper.commercial-services__wrapper .explainer__watisit-text {
     font-size: 44px;
     line-height: 29px;
-    margin-right: -16px;
-  }
-
-  .cartoon .explainer__storytelling-title.cartoon-adaptive {
-    margin-right: 0px;
   }
 
   .commercial__inner.cartoon__inner .explainer__storytelling-box .explainer__storytelling-text {
@@ -1616,6 +1704,10 @@
 
   .cartoon__items-inner .storytelling__text-block {
     display: none;
+  }
+
+  .storytelling-conten__item.cartoon-content__item {
+    margin-top: 40px;
   }
 
   .storyboards.storyboards-adaptive .storyboards-wrapper::before {
@@ -1705,6 +1797,10 @@
     padding-bottom: 13px;
   }
 
+  .business-adaptive.services__pages .services__pages-img::after {
+    top: 134px;
+  }
+
   .animated__marketing-content .animated__marketing-content__title {
     font-size: 20px;
     margin-bottom: 20px;
@@ -1789,6 +1885,11 @@
   .our__family-inner .our__family-text::before {
     height: 210px;
   }
+
+  .services__pages .services__pages-title.educational__videos-title {
+    font-size: 41px;
+    padding-bottom: 13px;
+  }
 }
 @media (max-width: 400px) {
   .contact-author__inner .contact-author__inner-title {
@@ -1813,14 +1914,17 @@
     max-width: 270px;
   }
 
+  .explainer__wrapper .explainer__watisit-text__posution-relative {
+    left: -23px;
+  }
+
   .explainer__wrapper .explainer__watisit-text {
-    margin-right: -58px;
-    font-size: 32px;
+    font-size: 28px;
   }
 
   @keyframes whatTopAdaptive {
     0% {
-      transform: translateY(20px) scale(0.2);
+      transform: translateY(20px) scale(0.3);
     }
     70% {
       transform: translateY(0) scale(0.3);
@@ -1831,11 +1935,11 @@
   }
   .commercial .explainer__storytelling-title.commercial-adaptive {
     margin-right: 0;
-    font-size: 63px;
-    line-height: 48px;
+    font-size: 56px;
+    line-height: 40px;
   }
   .commercial .explainer__storytelling-title.commercial-adaptive span {
-    font-size: 44px;
+    font-size: 39px;
   }
 
   .storytelling-conten__item.commercial-conten__item .commercial-contenh2 h2 {
@@ -1872,7 +1976,7 @@
   }
 
   .services__pages .services__pages-title.educational__videos-title {
-    font-size: 41px;
+    font-size: 37px;
     padding-bottom: 17px;
   }
 
@@ -1912,9 +2016,12 @@
     max-width: 250px;
   }
 
+  .explainer__wrapper .explainer__watisit-text__posution-relative {
+    left: -34px;
+  }
+
   .explainer__wrapper .explainer__watisit-text {
-    margin-right: -58px;
-    font-size: 28px;
+    font-size: 25px;
   }
 
   @keyframes whatTopAdaptive {
@@ -1934,10 +2041,11 @@
   }
 
   .explainer__processs .explainer__processs-title {
+    text-align: center;
     width: 300px;
-    font-size: 62px;
+    font-size: 53px;
+    line-height: 42px;
   }
-
   .explainer__processs .explainer__processs-title span {
     font-size: 48px;
   }
@@ -2014,15 +2122,22 @@
   .our__family-inner .our__family-text::before {
     height: 180px;
   }
+
+  .testimonials .testimonials-title img {
+    max-width: 270px;
+  }
 }
 @media (max-width: 330px) {
   .explainer__wrapper .explainer__watisit-title {
     max-width: 222px;
   }
 
+  .explainer__wrapper .explainer__watisit-text__posution-relative {
+    left: -48px;
+  }
+
   .explainer__wrapper .explainer__watisit-text {
-    margin-right: -58px;
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .explainer__wrapper .explainer__watisit-title::before {

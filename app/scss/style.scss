@@ -646,7 +646,7 @@
 }
 .sandora-fruits.global_wrapper__inner {
   img {
-    width: 90%;
+    width: 100%;
   }
 }
 .sandora-fruits__title {
@@ -1168,13 +1168,19 @@ h1.contact-title {
   }
 }
 .service-item {
+  transition: all 0.5s;
   padding: 20px;
   width: 300px;
+  height: 430px;
   a {
     img {
       height: 160px;
     }
   }
+}
+.service-item:hover {
+  box-shadow: 0px 12px 50px 10px #ffd900;
+  border-radius: 8px;
 }
 .services__item-pages2,
 .services__item-pages3 {
@@ -1494,11 +1500,16 @@ h1.contact-title {
     transform: translateY(20px) scale(0.5);
   }
 }
-
+.explainer__watisit-text__posution-relative {
+  display: block;
+  width: 320px;
+  height: 50px;
+  margin: 0 auto;
+  position: relative;
+  left: 70px;
+  text-align: right;
+}
 .explainer__watisit-text {
-  display: inline-block;
-  width: 100%;
-  margin-right: -150px;
   font-size: 45px;
   font-weight: 700;
 }
@@ -1599,17 +1610,18 @@ h1.contact-title {
   width: 100%;
 }
 .explainer__processs-item3::after {
+  content: "";
+  position: absolute;
   background: url(/images/explainer__processs3after.png);
   background-size: contain;
   background-position: center;
-  top: 15px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: scale(1.4);
-  content: "";
-  position: absolute;
   background-repeat: no-repeat;
+  top: -15px;
+  left: 10px;
+  height: 300px;
+  width: 100%;
+  transform: scale(1.2);
+  padding: 0 10px;
 }
 .explainer__processs-item1,
 .explainer__processs-item2,
@@ -1809,10 +1821,10 @@ h1.contact-title {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 155px;
+    width: 35px;
     height: 153px;
-    top: 0;
-    right: -200px;
+    top: 33px;
+    right: -106px;
     animation: arrowDownRight 5s infinite;
   }
   @keyframes arrowDownRight {
@@ -1826,12 +1838,16 @@ h1.contact-title {
       transform: translateY(20px) rotate(10deg);
     }
   }
-  .explainer__watisit-text {
-    font-size: 65px;
-    line-height: 45px;
-    font-weight: 400;
-    margin-right: -55px;
+  .explainer__watisit-text__posution-relative {
+    width: 400px;
+    left: 25px;
+    .explainer__watisit-text {
+      font-size: 65px;
+      line-height: 45px;
+      font-weight: 400;
+    }
   }
+
   .explainer__watisit-inner {
     padding: 24px 0 50px;
   }
@@ -1849,8 +1865,9 @@ h1.contact-title {
   padding-top: 0;
   font-size: 70px;
   font-weight: 500;
-  margin-right: -321px;
-  margin-bottom: -181px;
+  margin-right: auto;
+  margin-left: 336px;
+  margin-bottom: -118px;
   span {
     font-size: 55px;
     font-weight: 400;
@@ -1935,9 +1952,6 @@ h1.contact-title {
   max-width: 845px;
 }
 .explainer__wrapper.cartoon__wrapper {
-  & .explainer__watisit-text {
-    margin-right: -137px;
-  }
   & .explainer__watisit-title::before {
     top: -111px;
   }

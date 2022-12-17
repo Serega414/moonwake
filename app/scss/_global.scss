@@ -25,11 +25,11 @@ p {
   padding: 0;
   list-style: none;
 }
-html {
+/* html {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
-}
+} */
 body {
   color: #000;
   font-family: "Open Sans", sans-serif;
@@ -325,7 +325,7 @@ textarea {
   text-align: center;
 }
 .global_wrapper__inner img {
-  width: 76%;
+  width: 100%;
 }
 .global_wrapper__item {
   position: relative;
