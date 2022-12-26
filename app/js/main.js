@@ -1,4 +1,6 @@
+
 $(function () {
+
   $('.header__burger').on('click',function(){
     $('.header__burger,.header__top-menu').toggleClass('active');
     $('body').toggleClass('lock');

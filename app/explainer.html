@@ -146,18 +146,52 @@
     <!-- list social nav -->
     <!-- btn-form -->
     <div class="btn-form btn-respon__fixed"></div>
-    <div class="header__form-slide">
-      <form>
-        <div class="form-inner">
-          <h1 class="btn-form__title">
-            Do you have any questions? Let's talk!
-          </h1>
-          <input type="text" placeholder="E-mail" required />
-          <input type="email" placeholder="Name" required />
-          <textarea placeholder="Questions" rows="5" required></textarea>
-          <button type="submit" href="/">Send</button>
-
-          <span>I agree the Terms of Service</span>
+    <div class="header__form-slide form">
+      <form action="#" id="form" class="form__body">
+        <h1 class="form__title">Do you have any questions? Let's talk!</h1>
+        <div class="form__item">
+          <label for="formEmail" class="form__label"></label>
+          <input
+            id="formEmail"
+            type="text"
+            name="email"
+            class="form__input _req _email"
+            placeholder="E-mail"
+          />
+        </div>
+        <div class="form__item">
+          <label for="formName" class="form__label"></label>
+          <input
+            id="formName"
+            type="text"
+            name="name"
+            class="form__input _req"
+            placeholder="Name"
+          />
+        </div>
+        <div for="formMessage" class="form__item">
+          <label class="form__label"></label>
+          <textarea
+            id="formMessage"
+            name="message"
+            class="form__input"
+            placeholder="Questions"
+          ></textarea>
+        </div>
+        <button type="submit" class="form__button">Send</button>
+        <div class="form__item">
+          <div class="checkbox">
+            <input
+              id="formAgreement"
+              checked
+              type="checkbox"
+              name="agreement"
+              class="checkbox__input _req"
+            />
+            <label for="formAgreement" class="checkbox__label"
+              ><span>I agree the Terms of Service</span></label
+            >
+          </div>
         </div>
       </form>
     </div>
@@ -519,7 +553,7 @@
             <ul>
               <li><a href="#">Knowledge base</a></li>
               <li>
-                <a href="services-tutorial__videos.html">Video tutorials</a>
+                <a href="explainer-tutorial__videos.html">Video tutorials</a>
               </li>
             </ul>
           </div>
@@ -535,6 +569,8 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <script src="/js/form-mail.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="/js/libs.min.js "></script>
     <script src="/js/main.js "></script>
   </body>

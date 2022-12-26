@@ -671,6 +671,11 @@
     bottom: 20px;
     right: 20px;
   }
+  .header__form-slide.form {
+    bottom: 84px;
+    right: 19px;
+    transform: translateX(400px);
+  }
   .luxembourg__fibre .luxembourg__fibre-block {
     padding-top: 10px;
   }
@@ -1728,6 +1733,26 @@
   }
   .head__animated-marketing.head__animated-marketing__adaptive span {
     font-size: 20px;
+  }
+}
+@media (max-width: 390px) {
+  .header__form-slide.form {
+    width: 288px;
+  }
+  .form__body .form__title {
+    font-size: 14px;
+    margin-bottom: 7px;
+    padding: 21px 29px 0;
+    color: #fff;
+  }
+  .form__body .form__input {
+    height: 38px;
+  }
+  .form__body textarea.form__input {
+    min-height: 100px;
+  }
+  .form__body .form__button {
+    margin: 12px 0 0 0;
   }
 }
 @media (max-width: 380px) {
