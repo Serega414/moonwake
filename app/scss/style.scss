@@ -1257,24 +1257,35 @@ h1.contact-title {
     max-width: 1200px;
     margin: 0 auto;
   }
-  form {
-    display: flex;
-    justify-content: center;
-    input {
-      padding: 0 20px;
-      height: 58px;
-      width: 40%;
-    }
-    .services__form-submit {
-      width: 137px;
-      font-size: 16px;
-      font-weight: 700;
-      color: rgb(255, 255, 255);
-      background-color: #000;
-    }
-  }
 }
-.questions__form-wrapper form input + input {
+.form-body2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2s0px;
+}
+.form__item2{
+  width: 40%;
+  display: block;
+  input {
+    border-radius: 0;
+    padding: 0 20px;
+    height: 58px;
+    width: 100%;
+  }
+ }
+.form__button2{
+  padding: 19px 50px;
+  border-radius: 50px;
+  margin-left: 10px;
+   font-size: 16px;
+   font-weight: 700;
+   color: rgb(255, 255, 255);
+   background-color: #000;
+   transition:background 0.5s ease-in-out ;
+ }
+ 
+.questions__form-wrapper .form__item2 + .form__item2{
   margin-left: 15px;
 }
 

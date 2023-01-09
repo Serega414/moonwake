@@ -338,7 +338,14 @@ textarea {
 .form__input:focus {
   box-shadow: 0 0 15px #e8ff00;
 }
-.form__input._error {
+.form__inputTwo{
+  transition: all 0.5s ease 0s;
+}
+.form__inputTwo:focus {
+  box-shadow: 0 0 15px #000000;
+}
+.form__input._error,
+.form__input._errorTwo {
   box-shadow: 0 0 15px red;
 }
 textarea.form__input {
@@ -410,10 +417,13 @@ textarea.form__input {
   transition: background-color 0.5s ease 0s;
   margin: 20px 0 0 0;
 }
-.form__button:hover {
+.form__button:hover,
+.form__button2:hover {
+  transition:background 0.5s ease-in-out ;
   background: #6d39ec;
 }
-.form__button:active {
+.form__button:active,
+.form__button2:active {
   top: 3px;
   box-shadow: 0 1px 0 #000;
 }

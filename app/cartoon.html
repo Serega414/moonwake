@@ -435,24 +435,30 @@
     <section class="services-questions__form">
       <div class="questions__form-wrapper">
         <div class="questions__form-title">HAVE A QUESTION?</div>
-        <div class="questions__form-text">
-          Once a month you will learn about our latest features and hottest
-          news. And no spam of course.
-        </div>
+        <div class="questions__form-text">Please let us know!</div>
         <div class="form__adpative-services">
-          <form>
-            <input type="text" name="field1" placeholder="Your Name" required />
-            <input
-              type="email"
-              name="field2"
-              placeholder="Email Address"
-              required
-            />
-            <input
-              class="services__form-submit"
-              type="submit"
-              value="Subscribe"
-            />
+          <form action="#" id="formTwo" class="form-body2" >
+            <div class="form__item2 ">
+              <label for="formName" class="form__label"></label>
+              <input
+                id="formName"
+                type="text"
+                name="name"
+                class="form__input form__inputTwo _reqTwo"
+                placeholder="Name"
+              />
+            </div>
+            <div class="form__item2">
+              <label for="formEmail" class="form__label"></label>
+              <input
+                id="formEmail"
+                type="text"
+                name="email"
+                class="form__input form__inputTwo _reqTwo _emailTwo"
+                placeholder="E-mail"
+              />
+            </div>
+            <button type="submit" class="form__button2">Send</button>
           </form>
         </div>
       </div>
@@ -520,6 +526,7 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <script src="./js/form-mailTwo.js"></script>
     <script src="/js/form-mail.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="/js/libs.min.js "></script>

@@ -30,7 +30,6 @@ gulp.task('style', function() {
         .pipe(cssmin())
         .pipe(gulp.dest('app/css'))
 });
-
 gulp.task('script', function() {
     return gulp.src([
             'node_modules/slick-carousel/slick/slick.js',
@@ -41,7 +40,6 @@ gulp.task('script', function() {
         .pipe(uglify())
         .pipe(gulp.dest('app/js'))
 });
-
 gulp.task('html', function() {
     return gulp.src('app/*.html')
         .pipe(browserSync.reload({ stream: true }))

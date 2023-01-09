@@ -219,14 +219,6 @@
   .moonwake-family__content .moonwake-family__text::after {
     display: none;
   }
-  .questions__form-wrapper .form__adpative-services form {
-    flex-wrap: wrap;
-    input {
-      width: 60%;
-      margin-left: 0;
-      margin-bottom: 20px;
-    }
-  }
   .commercial__inner.cartoon__inner
     .explainer__storytelling-box
     .explainer__storytelling-text {
@@ -336,6 +328,32 @@
     font-size: 16px;
   }
 }
+@media (max-width: 900px){
+ .form__adpative-services .form-body2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+  }
+ .form-body2 .form__item2{
+  padding: 0 20px;
+  max-width: 600px;
+    width: 100%;
+    margin-bottom: 20px;
+     }
+     .questions__form-wrapper .form-body2 .form__item2 + .form__item2{
+      margin-left: 0;
+
+     }
+     .form-body2 .form__button2{
+      width: 90%;
+      max-width: 560px;
+      margin-left: 0;
+      padding: 19px 100px;
+     }
+}
+
 @media (max-width: 860px) {
   .testimonials .testimonials-title img {
     max-width: 450px;
